@@ -3,9 +3,11 @@ package com.skilldistillery.jpacrud.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.skilldistillery.jpacrud.data.TransporterDAO;
+import com.skilldistillery.jpacrud.entities.Personnel;
 
 @Controller
 public class PersonnelController {
@@ -28,10 +30,13 @@ public class PersonnelController {
 		return mv;
 	}
 	
-	
-	
-	
-	
-	
+	@RequestMapping(path="updateLog.do")
+	public ModelAndView updateLog(@RequestParam("personnelId") int id) {
+		ModelAndView mv = new ModelAndView();
+		Personnel personnel = dao.findById(id);
+		mv.setViewName("updatelog");
+		mv.addObject("personnel", personnel);
+		return mv;
+	}
 	
 }

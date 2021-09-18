@@ -11,29 +11,32 @@
 
 </head>
 <body>
-	<table>
-		<tr>
-			<th></th>
-			<th>ID</th>
-			<th>Rank</th>
-			<th>Name</th>
-			<th>Departure</th>
-			<th>Destination</th>
-			<th>Time</th>
-		</tr>
-		<c:forEach var="p" items="${personnelList }">
+	<form action="updateLog.do" method="POST">
+		<table>
 			<tr>
-				<td><div class="radio">
-                     <label><input type="radio" id='${p.id }' name="recordChoice"></label>
-                 </div></td>
-                 <td>${p.id }</td>
-				<td>${p.rank }</td>
-				<td>${p.firstName } ${p.lastName }</td>
-				<td>${p.departureLocation }</td>
-				<td>${p.destination }</td>
+				<th></th>
+				<th>ID</th>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Departure</th>
+				<th>Destination</th>
+				<th>Time</th>
 			</tr>
-		</c:forEach>
-	</table>
+			<c:forEach var="p" items="${personnelList }">
+				<tr>
+					<td><div class="radio">
+							<label><input type="radio" id="${p.id }" value="${p.id }" name="personnelId"></label>
+						</div></td>
+					<td>${p.id }</td>
+					<td>${p.rank }</td>
+					<td>${p.firstName } ${p.lastName }</td>
+					<td>${p.departureLocation }</td>
+					<td>${p.destination }</td>
+				</tr>
+			</c:forEach>
+		</table>
+		<input type="submit" value="Update">
+	</form>
 	<jsp:include page="bootstrapfoot.jsp"></jsp:include>
 
 </body>

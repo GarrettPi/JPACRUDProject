@@ -19,7 +19,7 @@ public class TransporterDaoImpl implements TransporterDAO {
 
 	@Override
 	public Personnel findById(int id) {
-		return null;
+		return em.find(Personnel.class, id);
 	}
 
 	@Override
