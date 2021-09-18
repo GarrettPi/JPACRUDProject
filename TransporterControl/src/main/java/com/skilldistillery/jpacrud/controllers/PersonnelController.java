@@ -39,4 +39,13 @@ public class PersonnelController {
 		return mv;
 	}
 	
+	@RequestMapping(path="logUpdated.do")
+	public ModelAndView updated(Personnel personnel) {
+		ModelAndView mv = new ModelAndView();
+		Personnel updated = dao.updateRecord(personnel);
+		mv.addObject("personnel", updated);
+		mv.setViewName("logupdated");
+		return mv;
+	}
+	
 }

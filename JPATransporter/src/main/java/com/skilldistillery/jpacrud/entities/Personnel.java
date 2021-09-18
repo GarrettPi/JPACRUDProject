@@ -1,5 +1,8 @@
 package com.skilldistillery.jpacrud.entities;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,14 +29,14 @@ public class Personnel {
 	
 	private String destination;
 
-//	private DateTime time;
+	private LocalDateTime time;
 	
 	public Personnel() {
 		super();
 	}
 
 	public Personnel(int id, String rank, String firstName, String lastName, String departureLocation,
-			String destination) {
+			String destination, LocalDateTime time) {
 		super();
 		this.id = id;
 		this.rank = rank;
@@ -41,6 +44,7 @@ public class Personnel {
 		this.lastName = lastName;
 		this.departureLocation = departureLocation;
 		this.destination = destination;
+		this.time = time;
 	}
 
 	public int getId() {
@@ -89,6 +93,14 @@ public class Personnel {
 
 	public void setDestination(String destination) {
 		this.destination = destination;
+	}
+
+	public LocalDateTime getTime() {
+		return time;
+	}
+
+	public void setTime(LocalDateTime time) {
+		this.time = time;
 	}
 
 	@Override

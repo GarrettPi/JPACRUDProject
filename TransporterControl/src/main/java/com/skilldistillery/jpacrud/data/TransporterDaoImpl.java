@@ -29,4 +29,17 @@ public class TransporterDaoImpl implements TransporterDAO {
 		return em.createQuery(jpql, Personnel.class).getResultList();
 	}
 
+	@Override
+	public Personnel updateRecord(Personnel personnel) {
+		Personnel orig = em.find(Personnel.class, personnel.getId());
+		orig.setFirstName(personnel.getFirstName());
+		orig.setLastName(personnel.getLastName());
+		orig.setRank(personnel.getRank());
+		orig.setDepartureLocation(personnel.getDepartureLocation());
+		orig.setDestination(personnel.getDestination());
+		return orig;
+	}
+	
+	
+
 }

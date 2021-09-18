@@ -7,8 +7,14 @@
 <head>
 <meta charset="UTF-8">
 <title>New Transport</title>
+<jsp:include page="bootstraphead.jsp"></jsp:include>
 </head>
 <body>
 
+
+
+
+
+<jsp:include page="bootstrapfoot.jsp"></jsp:include>
 </body>
 </html>

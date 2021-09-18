@@ -8,4 +8,5 @@ public interface TransporterDAO {
 
 	Personnel findById(int id);
 	List<Personnel> findAll();
+	Personnel updateRecord(Personnel personnel);
 }
