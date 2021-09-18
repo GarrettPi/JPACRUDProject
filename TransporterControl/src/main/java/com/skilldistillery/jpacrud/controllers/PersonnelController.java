@@ -16,8 +16,15 @@ public class PersonnelController {
 	@RequestMapping(path= {"/", "home.do"})
 	public ModelAndView home() {
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("personnelList", dao.findAll());
 		mv.setViewName("home");
+		return mv;
+	}
+	
+	@RequestMapping(path="viewLogs.do")
+	public ModelAndView viewLogs() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("viewlogs");
+		mv.addObject("personnelList", dao.findAll());
 		return mv;
 	}
 	
