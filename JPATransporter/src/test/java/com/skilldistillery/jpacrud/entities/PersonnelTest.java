@@ -48,6 +48,8 @@ class PersonnelTest {
 		assertNotNull(personnel);
 		assertEquals("Reginald", personnel.getFirstName());
 		assertEquals("Barclay", personnel.getLastName());
+		assertEquals("TransporterRoom6", personnel.getDepartureLocation());
+		assertEquals("Surface", personnel.getDestination());
 	}
 
 }
