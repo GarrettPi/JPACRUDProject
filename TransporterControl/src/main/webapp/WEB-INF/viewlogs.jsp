@@ -35,7 +35,7 @@
 				</tr>
 			</c:forEach>
 		</table>
-		<input type="submit" value="Update">
+		<input type="submit" value="Update or Delete">
 	</form>
 	<jsp:include page="bootstrapfoot.jsp"></jsp:include>
 

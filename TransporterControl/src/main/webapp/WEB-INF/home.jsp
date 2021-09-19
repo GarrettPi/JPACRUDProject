@@ -14,6 +14,7 @@
 <body>
 	<div>
 		<h2>Transporter Control</h2>
+		<a class="btn btn-primary" href="createLog.do" role="button">New Transport</a>
 	</div>
 	<div>
 		<h2>Transporter Logs</h2>

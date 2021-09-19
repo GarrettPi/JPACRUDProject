@@ -1,0 +1,11 @@
+.update{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left;
+}
+.updateinput {
+  display: inline-block;
+  float: left;
+}

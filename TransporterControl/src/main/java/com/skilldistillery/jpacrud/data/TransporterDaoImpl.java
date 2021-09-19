@@ -1,5 +1,6 @@
 package com.skilldistillery.jpacrud.data;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -38,6 +39,21 @@ public class TransporterDaoImpl implements TransporterDAO {
 		orig.setDepartureLocation(personnel.getDepartureLocation());
 		orig.setDestination(personnel.getDestination());
 		return orig;
+	}
+
+	@Override
+	public int createRecord(Personnel personnel) {
+		personnel.setTime(LocalDateTime.now());
+		em.persist(personnel);
+		em.flush();
+		return personnel.getId();
+	}
+
+	@Override
+	public Personnel deleteRecord(int id) {
+		Personnel personnel = em.find(Personnel.class, id);
+		em.remove(personnel);
+		return personnel;
 	}
 	
 	
