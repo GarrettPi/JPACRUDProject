@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>New Log</title>
+<title>Update Log</title>
 <jsp:include page="bootstraphead.jsp"></jsp:include>
 </head>
 <body>
