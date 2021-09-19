@@ -12,7 +12,7 @@
 <body>
 <form action="logCreated.do" method="post">
 <label class="update">Rank:</label><input type="text" name="rank" required class="updateinput"><br>
-<label class="update">First Name:</label><input type="text" name="firstName" class="updateinput"><br>
+<label class="update">First Name:</label><input type="text" name="firstName" required class="updateinput"><br>
 <label class="update">Last Name:</label><input type="text" name="lastName" required class="updateinput"><br>
 <label class="update">Departure Location:</label><input type="text" name="departureLocation" required class="updateinput"><br>
 <label class="update">Destination:</label><input type="text" name="destination" required class="updateinput">
