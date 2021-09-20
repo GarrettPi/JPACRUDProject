@@ -28,6 +28,13 @@ While on the update page, you can instead choose to delete the record by clickin
 
 ### Technologies
 
-
+*Java
+*MySql
+*Apache Tomcat
+*Spring Boot MVC
+*Gradle
+*JPA for ORM
 
 ### Lessons Learned
+
+Primary lesson learned: Not to overreach when working against a deadline.  I completed the basics of my project fairly easily and quickly.  I then went back to try and experiment and practice some skills and technologies that I thought might bring a bit more excitement into my project.  Unfortunately, this led me to break my code in a very minor, nearly undetectable way.  This small error caused issues with database communication and took me quite some time to track down.  Luckily I had committed a complete project or I might have been in a tight spot.  
