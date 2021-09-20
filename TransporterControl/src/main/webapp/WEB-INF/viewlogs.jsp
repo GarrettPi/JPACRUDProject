@@ -25,7 +25,7 @@
 			<c:forEach var="p" items="${personnelList }">
 				<tr>
 					<td><div class="radio">
-							<label><input type="radio" id="${p.id }" value="${p.id }" name="personnelId"></label>
+							<label><input type="radio" id="${p.id }" value="${p.id }" name="personnelId" required></label>
 						</div></td>
 					<td>${p.id }</td>
 					<td>${p.rank }</td>
