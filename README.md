@@ -34,6 +34,7 @@ While on the update page, you can instead choose to delete the record by clickin
 * Spring Boot MVC
 * Gradle
 * JPA for ORM
+* Bootstrap
 
 ### Lessons Learned
 
