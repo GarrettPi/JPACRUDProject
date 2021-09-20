@@ -32,6 +32,7 @@
 					<td>${p.firstName } ${p.lastName }</td>
 					<td>${p.departureLocation }</td>
 					<td>${p.destination }</td>
+					<td>${p.time }</td>
 				</tr>
 			</c:forEach>
 		</table>
