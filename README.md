@@ -28,12 +28,12 @@ While on the update page, you can instead choose to delete the record by clickin
 
 ### Technologies
 
-*Java
-*MySql
-*Apache Tomcat
-*Spring Boot MVC
-*Gradle
-*JPA for ORM
+* Java
+* MySql
+* Apache Tomcat
+* Spring Boot MVC
+* Gradle
+* JPA for ORM
 
 ### Lessons Learned
 
